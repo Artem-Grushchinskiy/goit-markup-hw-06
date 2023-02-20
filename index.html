@@ -461,6 +461,24 @@
                 placeholder="stantone@email.ho"
                 required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}">
           </div>
+          <div class="modal-field">
+            <lable class="modal-comment" for="user-comment">Comment</lable>
+              <textarea id="user-comment" placeholder="Text input" class="modal-textarea"></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+            type="checkbox"
+            name="policy"
+            class="modal-check visually-hidden"
+            id="policy"
+            value="true">
+            <label for="policy" class="policy-text">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./img/sym-defs-modal.svg#icon-check-open"></use>
+                </svg>
+              </span>I accept the terms and conditions of the Privacy Policy</label>
+          </div>
           <button type="submit" class="modal-submit">
             Send
           </button>
