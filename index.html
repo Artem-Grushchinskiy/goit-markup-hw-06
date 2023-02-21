@@ -21,9 +21,9 @@
       referrerpolicy="no-referrer"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -70,7 +70,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn" data-modal-open>Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!--------------------- Features -->
@@ -105,7 +107,6 @@
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
-              
             </li>
           </ul>
         </div>
@@ -257,7 +258,7 @@
                     </a>
                   </li>
                   <li class="social-item">
-                    <a class="social-link  team-sl-color" href>
+                    <a class="social-link team-sl-color" href>
                       <svg class="social-icon" width="16" height="16">
                         <use href="./img/symbol-defs.svg#icon-facebook"></use>
                       </svg>
@@ -369,7 +370,7 @@
         </div>
       </section>
     </main>
-   <!------------------------- Footer -->
+    <!------------------------- Footer -->
     <footer class="footer">
       <div class="container footer-deco">
         <div class="footer-logo-block">
@@ -414,9 +415,33 @@
             </li>
           </ul>
         </div>
+        <form action="#" class="submit-form>">
+          <div class="footer-field">
+            <label class="footer-label" for="user-mail">Subscribe</label>
+            <div class="footer-subscribe">
+              <input
+                type="email"
+                name="user-mail"
+                class="footer-input"
+                id="user-mail"
+                placeholder="Email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}"
+              />
+              <button type="submit" class="footer-btn" data-modal-open>
+                Subscribe
+                <span class="footer-btn-icon">
+                  <svg class="icon-tlgrm" width="24" height="24">
+                    <use href="./img/sym-defs-modal.svg#icon-tlgrm"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </footer>
-<!---------------------------- Modal --------------->
+    <!---------------------------- Modal --------------->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
@@ -427,74 +452,84 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form action="#" class="modal-forms">
           <div class="modal-field">
-            <lable class="modal-lable" for="user-name">Name</lable>
-              <div class="input-wrap">
-                <input
-                  type="text"
-                  name="user-name"
-                  class="modal-input"
-                  id="user-name"
-                  placeholder="Arch Stantone"
-                  required>
-                  <svg class="modal-icon-person" width="18" height="24">
-                    <use href="./img/sym-defs-modal.svg#icon-person"></use>
-                </svg>
-              </div>
+            <label class="modal-label" for="user-name">Name</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                id="user-name"
+                placeholder="Arch Stantone"
+                required
+              />
+              <svg class="modal-icon-person" width="18" height="24">
+                <use href="./img/sym-defs-modal.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
-            <lable class="modal-lable" for="user-tel">Phone</lable>
-              <div class="input-wrap">
-                <input
-                  type="tel"
-                  name="user-tel"
-                  class="modal-input"
-                  id="user-tel"
-                  placeholder="+380 (78) 313-87-87"
-                  required title="+380 (78) 313-87-87"
-                  pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
-                  <svg class="modal-icon-phone" width="18" height="24">
-                    <use href="./img/sym-defs-modal.svg#icon-phone"></use>
-                  </svg>
-              </div>
+            <label class="modal-label" for="user-tel">Phone</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-input"
+                id="user-tel"
+                placeholder="+380 (78) 313-87-87"
+                required
+                title="+380 (78) 313-87-87"
+                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              />
+              <svg class="modal-icon-phone" width="18" height="24">
+                <use href="./img/sym-defs-modal.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
-            <lable class="modal-lable" for="user-mail">Email</lable>
-              <div class="input-wrap">
-                <input
-                  type="email"
-                  name="user-mail"
-                  class="modal-input"
-                  id="user-mail"
-                  placeholder="stantone@email.ho"
-                  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}">
-                  <svg class="modal-icon-letter" width="18" height="24">
-                    <use href="./img/sym-defs-modal.svg#icon-letter"></use>
-                  </svg>
-              </div>
+            <label class="modal-label" for="user-mail">Email</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                name="user-mail"
+                class="modal-input"
+                id="user-mail"
+                placeholder="stantone@email.ho"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}"
+              />
+              <svg class="modal-icon-letter" width="18" height="24">
+                <use href="./img/sym-defs-modal.svg#icon-letter"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
-            <lable class="modal-comment" for="user-comment">Comment</lable>
-              <textarea id="user-comment" placeholder="Text input" class="modal-textarea"></textarea>
+            <label class="modal-comment" for="user-comment">Comment</label>
+            <textarea
+              id="user-comment"
+              placeholder="Text input"
+              class="modal-textarea"
+            ></textarea>
           </div>
           <div class="modal-field">
-            <div class="input-wrap"><input
-            type="checkbox"
-            name="policy"
-            class="modal-check visually-hidden"
-            id="policy"
-            value="true">
-            <label for="policy" class="policy-text">
-              <span>
-                <svg class="check-icon" width="10" height="8">
-                  <use href="./img/sym-defs-modal.svg#icon-VVVVV"></use>
-                </svg>
-                </div>
-              </span>I accept the terms and conditions of the
-              <a href="#" class="policy-link"> Privacy Policy</a></label>
+            <div class="input-wrap">
+              <input
+                type="checkbox"
+                name="policy"
+                class="modal-check visually-hidden"
+                id="policy"
+                value="true"
+              />
+              <label for="policy" class="policy-text">
+                <span>
+                  <svg class="check-icon" width="10" height="8">
+                    <use href="./img/sym-defs-modal.svg#icon-VVVVV"></use>
+                  </svg> </span
+                >I accept the terms and conditions of the
+                <a href="#" class="policy-link"> Privacy Policy</a></label
+              >
+            </div>
           </div>
-          <button type="submit" class="modal-submit">
-            Send
-          </button>
+          <button type="submit" class="modal-submit">Send</button>
         </form>
         <!-- <form action="" class="modal-forms">
           <fieldset class="modal-data-group">
@@ -530,8 +565,6 @@
         </form> -->
       </div>
     </div>
-    <script src="./js/modal.js">
-
-    </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
