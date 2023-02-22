@@ -221,22 +221,16 @@ body {
   background-color: #31d0aa;
 }
 .footer-field {
-}
-.footer-label {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--color-special-light);
-  margin-bottom: 16px;
   margin-left: 80px;
 }
+.submit-form {
+  display: flex;
+}
+
 .footer-subscribe {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
-  margin-left: 80px;
   margin-top: 16px;
   gap: 24px;
 }
@@ -245,9 +239,21 @@ body {
   height: 40px;
   border: 1px solid var(--input-footer-border);
   border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
   padding-left: 16px;
   outline: transparent;
+}
+.footer-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-btn {
   font-family: "Roboto", sans-serif;
@@ -267,6 +273,7 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
+  gap: 16px;
   transition: background 250ms cubic-bezier(0.32, 0, 0.67, 0);
   text-align: center;
 }
@@ -681,9 +688,11 @@ body {
   color: var(--footer-nav-color);
   margin-bottom: 16px;
 }
-
 .modal-field {
   margin-bottom: 8px;
+}
+.modal-label {
+  display: block;
 }
 .modal-label,
 .modal-comment {
@@ -725,11 +734,13 @@ body {
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
+  padding-top: 8px;
   outline: transparent;
   resize: none;
 }
 .modal-textarea:focus {
   border-color: var(--logo-iris);
+  fill: var(--logo-iris);
   transition: background-color 250ms cubic-bezier(0.32, 0, 0.67, 0);
 }
 .policy-link {
@@ -785,19 +796,18 @@ body {
   cursor: pointer;
   border: none;
   width: 169px;
-  min-height: 56px;
+  max-height: 56px;
   padding: 16px 32px;
   border-radius: 4px;
   display: block;
-  margin: 0 auto;
+  margin: 24px auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   text-align: center;
   /* margin-bottom: 24px; */
   /* align-items: center; */
 }
 .modal-submit:is(:hover, :focus) {
-  color: var(--color-special-light);
-  background: var(--accent-button);
+  background-color: var(--accent-button);
   transition: background-color 250ms cubic-bezier(0.32, 0, 0.67, 0);
 }
 .policy-text {
