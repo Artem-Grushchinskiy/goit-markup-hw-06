@@ -223,7 +223,7 @@ body {
 .footer-field {
   margin-left: 80px;
 }
-.submit-form {
+.form-submit {
   display: flex;
   margin-top: 16px;
   gap: 24px;
