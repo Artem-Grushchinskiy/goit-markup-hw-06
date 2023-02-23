@@ -225,15 +225,10 @@ body {
 }
 .submit-form {
   display: flex;
-}
-
-.footer-subscribe {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
   margin-top: 16px;
   gap: 24px;
 }
+
 .footer-input {
   width: 264px;
   height: 40px;
@@ -728,6 +723,8 @@ body {
   color: var(--input-color-text);
 }
 .modal-textarea {
+  display: block;
+  margin-bottom: 16px;
   width: 100%;
   height: 120px;
   border: 1px solid var(--input-border);
